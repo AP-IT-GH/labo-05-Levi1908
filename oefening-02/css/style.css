@@ -1,0 +1,45 @@
+
+body{
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        'main main main main right'
+        'footer footer footer footer footer';
+
+    font-family: Arial, sans-serif;
+    color: black;
+
+
+    padding: 5px;
+    min-height: 100vh;
+}
+
+header{
+    grid-area: header;
+    background-color: #91c8ff;
+}
+
+main{
+    grid-area: main;
+    background-color: #7da9d5;
+}
+
+nav{
+    grid-area: header;
+    background-color: #b3d8fd;
+    width: 250px;
+
+    justify-self: right;
+    /* grid-column: 5; */
+    align-self: center;
+}
+
+aside{
+    grid-area: right;
+    background-color: #007fff;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #588ec3;
+}
