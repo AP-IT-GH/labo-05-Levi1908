@@ -1,0 +1,41 @@
+body{
+    margin: 10px;
+}
+main{
+    display: grid;
+    grid-template-areas:
+    'article1 article2 article3' 
+    'article4 article5 article6'
+    'article7 article8 article9';
+
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 100px 100px 100px;
+
+    
+}
+
+article{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    border: 1px solid black;
+    padding-top: 20px;
+}
+
+
+
+article:nth-child(even){
+    background-color: #4dcc6f;
+}
+article:nth-child(odd){
+    background-color: #ebc51a;
+    color: black;
+}
+
+article:first-child{
+    background-color: #4d98da;
+}
+article:last-child{
+    background-color: #dd4d41;
+}
